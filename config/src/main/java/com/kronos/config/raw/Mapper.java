@@ -1,13 +1,15 @@
 package com.kronos.config.raw;
 
+import java.util.List;
+
 /**
  * @Author: jackila
  * @Date: 3:44 PM 2022-5-30
  */
-public class Mapping {
+public class Mapper {
     private String field;
     private String source;
-    private Mapping mapping;
+    private List<Mapper> mapping;
 
     public String getField() {
         return field;
@@ -25,11 +27,11 @@ public class Mapping {
         this.source = source;
     }
 
-    public Mapping getMapping() {
+    public List<Mapper> getMapping() {
         return mapping;
     }
 
-    public void setMapping(Mapping mapping) {
+    public void setMapping(List<Mapper> mapping) {
         this.mapping = mapping;
     }
 }

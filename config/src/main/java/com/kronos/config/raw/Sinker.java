@@ -1,5 +1,7 @@
 package com.kronos.config.raw;
 
+import java.util.List;
+
 /**
  * @Author: jackila
  * @Date: 12:21 PM 2022-5-29
@@ -10,7 +12,7 @@ public class Sinker {
     private String username;
     private String password;
     private String id;
-    private Mapping mapping;
+    private List<Mapper> mapping;
 
     public String getType() {
         return type;
@@ -52,11 +54,11 @@ public class Sinker {
         this.id = id;
     }
 
-    public Mapping getMapping() {
+    public List<Mapper> getMapping() {
         return mapping;
     }
 
-    public void setMapping(Mapping mapping) {
+    public void setMapping(List<Mapper> mapping) {
         this.mapping = mapping;
     }
 }
